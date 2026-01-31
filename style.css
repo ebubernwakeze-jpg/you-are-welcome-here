@@ -1,0 +1,251 @@
+/* ------------------------
+   GLOBAL STYLES
+-------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #f6f3ee; /* warm ivory */
+  color: #2b2b2b;
+  line-height: 1.8;
+}
+
+/* ------------------------
+   SECTION BASE
+-------------------------*/
+section {
+  padding: 5rem 10%;
+}
+
+h1, h2 {
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  margin-bottom: 1.2rem;
+  color: #2c2f4a; /* indigo-charcoal */
+}
+
+p, li {
+  font-size: 1.05rem;
+  max-width: 800px;
+}
+
+/* ------------------------
+   HERO
+-------------------------*/
+#hero {
+  background: linear-gradient(
+    135deg,
+    #2c2f4a,
+    #3f4c88
+  );
+  color: #fdfcf9;
+  text-align: center;
+  padding: 7rem 12%;
+}
+
+#hero h1 {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* ------------------------
+   CONTENT SECTIONS
+-------------------------*/
+#leadership,
+#intercultural,
+#action,
+#stonybrook {
+  background-color: #fdfcf9;
+  margin-bottom: 2.5rem;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+}
+
+/* ------------------------
+   LIST STYLE
+-------------------------*/
+ul {
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.6rem;
+}
+/* GALLERY SECTION */
+#gallery {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f6f3ff, #fdf7f2);
+}
+
+#gallery h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.8rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  background: white;
+  border-radius: 17px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: px;
+  object-fit: cover;
+}
+
+.gallery-item p {
+  padding: 0.8rem 1rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+/* ------------------------
+   LEADERSHIP INTERESTS & INITIATIVE
+-------------------------*/
+#initiative {
+  background-color: #fdfcf9;
+  margin-bottom: 2.5rem;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+}
+
+#initiative p {
+  margin-bottom: 1.2rem;
+}
+
+/* ------------------------
+   VIDEO
+-------------------------*/
+#video {
+  background-color: #f1ede6;
+  border-radius: 18px;
+}
+
+.video-container {
+  padding-top:2% ;
+  position: relative;
+  padding-bottom: 59.25%;
+  height: 0;
+  border-radius: 10px;
+ 
+  overflow: hidden;
+  box-shadow: 0 25px 45px rgba(0,0,0,0.08);
+}
+
+.video-container iframe {
+  position: absolute;
+  width: 100%;
+  height: 110%;
+}
+#video {
+  scroll-margin-top: 40px;
+}
+/* ------------------------
+   ACCENT ELEMENT
+-------------------------*/
+h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #c9a24d; /* soft gold */
+  margin-top: 0.4rem;
+  border-radius: 2px;
+}
+#gallery h2::after {
+  display: none;
+}
+/* ------------------------
+   FOOTER
+-------------------------*/
+footer {
+  text-align: center;
+  padding: 2.5rem;
+  background-color: #2c2f4a;
+  color: #fdfcf9;
+  font-size: 0.9rem;
+}
+
+/* ------------------------
+   RESPONSIVE
+-------------------------*/
+@media (max-width: 768px) {
+  section {
+    padding: 4rem 7%;
+  }
+
+  #hero h1 {
+    font-size: 2.4rem;
+  }
+}
+/* ========================
+   MOBILE TYPOGRAPHY FIX
+======================== */
+
+@media (max-width: 480px) {
+
+  #hero {
+    padding: 5.5rem 8%;
+  }
+
+  #hero h1 {
+    font-size: clamp(2.2rem, 8vw, 2.6rem);
+    line-height: 1.2;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.2rem;
+  }
+
+  #hero p {
+    font-size: clamp(1rem, 4.5vw, 1.1rem);
+    line-height: 1.6;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: clamp(1.6rem, 6vw, 1.9rem);
+    line-height: 1.3;
+  }
+
+  p, li {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+}
