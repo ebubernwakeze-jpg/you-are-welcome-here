@@ -45,7 +45,7 @@ p, li {
  height: 45vh;
   background:
 
-    url("IMAGES/real\ deal.jpeg");
+    url("IMAGES/main\ jig.jpeg");
 
   background-size: cover;
   background-position: center;
@@ -227,7 +227,12 @@ footer {
 @media (max-width: 480px) {
 
   #hero {
+    
     padding: 5.5rem 8%;
+    height: 120px;
+   
+    
+    
   }
 
   #hero h1 {
