@@ -39,17 +39,22 @@ p, li {
 /* ------------------------
    HERO
 -------------------------*/
+
+
 #hero {
-  background: linear-gradient(
-    135deg,
-    #2c2f4a,
-    #3f4c88
-  );
+  height: 60vh;
+  background:
+
+    url("IMAGES/head\ immages.jpeg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   color: #fdfcf9;
   text-align: center;
   padding: 7rem 12%;
 }
-
 #hero h1 {
   font-size: 3.2rem;
   margin-bottom: 1rem;
